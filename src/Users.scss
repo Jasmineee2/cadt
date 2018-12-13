@@ -1,0 +1,60 @@
+ul.user-list {
+  margin: 0px 40px 0px 40px;
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 10px;
+    border: 1px solid black;
+    height: 80px;
+    div {
+      justify-content: flex-start;
+      align-items: center;
+      min-width: 0;
+      display: flex;
+      float: left;
+      height: 80px;
+      div.x-icon {
+        width: 80px;
+        position: relative;
+        left: 15px;
+        img.x-icon {
+          height: 50px;
+        }
+      }
+      .user-info {
+        width: 800px;
+        h3 {
+          width: 200px;
+          padding-left: 30px;
+        }
+        p {
+          width: 300px;
+        }
+      }
+
+      .setting {
+        position: relative;
+        left: 500px;
+        img.setting-icon {
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+button.load-more {
+  position: relative;
+  left: 50%;
+  margin: 20px auto;
+  border: 0.5px solid black;
+  background: lightgray;
+  padding: 14px 24px;
+  font-size: 14px;
+  border-radius: 10px;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

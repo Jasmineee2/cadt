@@ -1,0 +1,32 @@
+header {
+  background: white;
+  height: 50px;
+  border-bottom: 1px solid black;
+  padding-right: 0;
+  padding-left: 0;
+  .title {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 20px;
+  }
+}
+main {
+  aside {
+    float: left;
+    width: 9.9%;
+    height: 960px;
+    border-right: 1px solid black;
+    div {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      margin-top: 20px;
+    }
+  }
+  section {
+    float: right;
+    width: 90%;
+  }
+}

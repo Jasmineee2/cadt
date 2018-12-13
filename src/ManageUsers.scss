@@ -1,0 +1,26 @@
+.add-new-user {
+  border: 0.5px solid black;
+  margin: 20px 40px 0px 40px;
+}
+
+.search-input {
+  margin: 0px 40px;
+
+  img {
+    position: relative;
+    height: 20px;
+    left: 1em;
+    top: 40px;
+  }
+  input {
+    width: 100%;
+    border: 1px solid black;
+    padding: 1em 1em 1em 3em;
+    margin: 0;
+    font-size: 1em;
+  }
+}
+
+.list-of-users {
+  margin-top: 20px;
+}
