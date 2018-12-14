@@ -4,7 +4,6 @@ import AddNewUser from './AddNewUser';
 import searchIcon from '../assets/search-icon.png';
 import Userlist from '../data/users.json';
 import './ManageUsers.scss';
-import { isUserWhitespacable } from 'babel-types';
 
 class ManageUsers extends Component {
   constructor() {
@@ -52,10 +51,14 @@ class ManageUsers extends Component {
       phone: this.state.phone,
       role: this.state.role
     };
-    const users = [...this.state.users, newUser];
+    if (this.state.name.trim() === '' || this.state.email.trim() === '') {
+      alert('Name and Email are required!');
+    } else {
+      const users = [newUser, ...this.state.users];
 
-    this.setState({ users });
-    this.handleAddUserClick();
+      this.setState({ users, name: '', email: '', phone: '' });
+      this.handleAddUserClick();
+    }
   }
 
   openUpdateInput(id, index) {
@@ -76,10 +79,14 @@ class ManageUsers extends Component {
       email: this.state.email,
       phone: this.state.phone
     };
-    const index = this.state.index;
-    users[index] = updatedUser;
-    this.setState({ users });
-    this.closeUpdateInput();
+    if (this.state.name.trim() === '' || this.state.email.trim() === '') {
+      alert('Name and Email are required!');
+    } else {
+      const index = this.state.index;
+      users[index] = updatedUser;
+      this.setState({ users, name: '', email: '', phone: '' });
+      this.closeUpdateInput();
+    }
   }
 
   render() {

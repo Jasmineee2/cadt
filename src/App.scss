@@ -4,11 +4,27 @@ header {
   border-bottom: 1px solid black;
   padding-right: 0;
   padding-left: 0;
-  .title {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 20px;
+  .header {
+    display: flex;
+    height: 50px;
+
+    img.menu {
+      width: 30px;
+      height: 30px;
+      margin-left: 10px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .title {
+      margin-left: 20px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
 main {
@@ -23,6 +39,9 @@ main {
       border-top: 1px solid black;
       border-bottom: 1px solid black;
       margin-top: 20px;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
   section {

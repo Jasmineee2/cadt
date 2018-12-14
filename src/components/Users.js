@@ -85,7 +85,7 @@ class Users extends Component {
               <li className="each-user">
                 <div>
                   <div className="x-icon">
-                    <img className="x-icon" src={user.picture} alt="x" />
+                    <img className="x-icon" src={user.picture} alt="photo" />
                   </div>
                   <div className="user-info">
                     <h3>{user.name}</h3>
