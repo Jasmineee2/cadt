@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import ManageUsers from './ManageUsers';
+import ManageUsers from './components/ManageUsers';
 import './App.scss';
 
 const App = () => {

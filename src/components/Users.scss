@@ -1,0 +1,139 @@
+ul.user-list {
+  margin: 0px 40px 0px 40px;
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 10px;
+    border: 1px solid black;
+    height: 80px;
+    div {
+      justify-content: flex-start;
+      align-items: center;
+      min-width: 0;
+      display: flex;
+      float: left;
+      height: 80px;
+      div.x-icon {
+        width: 80px;
+        position: relative;
+        left: 15px;
+        img.x-icon {
+          height: 50px;
+        }
+      }
+      .user-info {
+        width: 800px;
+        h3 {
+          width: 200px;
+          padding-left: 30px;
+        }
+        p {
+          width: 300px;
+        }
+      }
+
+      .setting {
+        position: relative;
+        left: 500px;
+        img.setting-icon {
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+button.load-more {
+  position: relative;
+  left: 50%;
+  margin: 20px auto;
+  border: 0.5px solid black;
+  background: lightgray;
+  padding: 14px 24px;
+  font-size: 14px;
+  border-radius: 10px;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.overlay-update {
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: hsla(0, 0%, 100%, 0.65);
+  .update-user {
+    border: 1px solid black;
+    height: 450px;
+    width: 450px;
+    background: white;
+    position: absolute;
+    top: 80px;
+    right: 500px;
+    z-index: 1;
+    padding-top: 5px;
+    div.title {
+      border-bottom: 1px solid black;
+      padding: 10px 20px;
+      height: 40px;
+      h3 {
+        font-size: 1.5em;
+        float: left;
+        margin: 5px;
+      }
+      img {
+        float: right;
+        width: 35px;
+      }
+    }
+
+    ul.update-user-input {
+      list-style-type: none;
+      padding: 5px 0px 0px 20px;
+      li {
+        input {
+          height: 30px;
+          width: 300px;
+        }
+        input::placeholder {
+          font-size: 15px;
+          padding-left: 5px;
+        }
+      }
+    }
+    .buttons {
+      button {
+        margin: 20px auto;
+        border: 0.5px solid black;
+        background: lightgray;
+        padding: 14px 24px;
+        font-size: 14px;
+        border-radius: 10px;
+      }
+      button.cancel {
+        float: left;
+        margin-left: 20px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      button.update {
+        float: right;
+        margin-right: 20px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
